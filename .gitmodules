@@ -1,0 +1,8 @@
+[submodule "src/sllidar_ros2"]
+	path = src/sllidar_ros2
+    url = git@github.com:Slamtec/sllidar_ros2.git
+    branch = main
+[submodule "src/serial_controller"]
+	path = src/serial_controller
+    url = git@github.com:LI-DC-Long-Island-Deer-Chaser/serial_controller.git
+    branch = main
