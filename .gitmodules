@@ -6,3 +6,9 @@
 	path = src/serial_controller
     url = git@github.com:LI-DC-Long-Island-Deer-Chaser/serial_controller.git
     branch = main
+[submodule "src/Deterrent-System"]
+	path = src/Deterrent-System
+	url = git@github.com:LI-DC-Long-Island-Deer-Chaser/Deterrent-System.git
+[submodule "src/speaker_controller"]
+	path = src/speaker_controller
+	url = git@github.com:LI-DC-Long-Island-Deer-Chaser/speaker_controller.git
