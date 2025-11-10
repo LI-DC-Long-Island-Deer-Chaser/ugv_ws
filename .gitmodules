@@ -12,3 +12,6 @@
 [submodule "src/speaker_controller"]
 	path = src/speaker_controller
 	url = git@github.com:LI-DC-Long-Island-Deer-Chaser/speaker_controller.git
+[submodule "src/ugv_description"]
+	path = src/ugv_description
+	url = git@github.com:LI-DC-Long-Island-Deer-Chaser/ugv_description.git
