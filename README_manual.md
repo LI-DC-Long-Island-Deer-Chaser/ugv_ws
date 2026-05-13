@@ -8,8 +8,10 @@ Before controlling the UGV, make sure you launch the joystick node:
 ros2 launch ugv_description joystick.launch.py
 ```
 
-## Controller Mapping
-The UGV utilizes an RC (Radio Control) override system mapping joystick axis inputs to the specific RC channels used by the ArduPilot flight controller.
+## Controller Mapping and RC Override
+When the joystick node (`xbox_teleop.py`) runs, it listens to the standard ROS `/joy` topic and converts the joystick inputs into a new message sent over the `/ap/joy` topic. ArduPilot's DDS (Data Distribution Service) interface subscribes to this `/ap/joy` topic and uses it to perform a direct **RC Override**.
+
+The `/ap/joy` message contains an array of 8 float values, which map directly to ArduPilot's 8 PWM Radio Control channels (Channels 1 through 8). By setting specific indices in the `ap_joy.axes` array (using normalized values from `-1.0` to `1.0`), we override the PWM output of those channels on the flight controller. Any channel set to `NaN` (Not a Number) is ignored by ArduPilot, allowing other automated or default functions to run without interference.
 
 ### Primary Driving Controls
 * **Throttle (Channel 1):** Controls the forward and backward speed of the UGV.
