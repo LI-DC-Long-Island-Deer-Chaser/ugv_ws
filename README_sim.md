@@ -51,3 +51,17 @@ source install/setup.bash
    ros2 launch ugv_description navigation.launch.py
    ```
 
+## Teleoperation and SLAM Visualization
+To manually drive the UGV via an Xbox controller and visualize the SLAM progress:
+
+1. **Launch the Teleoperation Joystick Node:**
+   ```bash
+   ros2 launch ugv_description joystick.launch.py
+   ```
+
+2. **Launch the Visualization GUI:**
+   ```bash
+   ros2 launch ugv_description gui.launch.py
+   ```
+   *Note: For more details on manual control and driving via the controller, see `README_manual.md`.*
+

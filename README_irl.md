@@ -61,3 +61,17 @@ sudo chmod a+rw /dev/ttyACM*
       ros2 launch ugv_description hw_nav.launch.py \
         map:=/home/odinroast/ugv_ws/src/ugv_description/config/irl/maps/my_map.yaml
     ```
+
+## Teleoperation and SLAM Visualization
+When mapping or driving in real life, you can manually drive the UGV via an Xbox controller and visualize the mapping process using the GUI:
+
+1. **Launch the Teleoperation Joystick Node:**
+   ```bash
+   ros2 launch ugv_description joystick.launch.py
+   ```
+
+2. **Launch the Visualization GUI to control ardupilot:**
+   ```bash
+   ros2 launch ugv_description gui.launch.py
+   ```
+   *Note: For more details on manual control and the controller mappings, see `README_manual.md`.*
