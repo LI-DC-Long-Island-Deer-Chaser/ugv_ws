@@ -7,3 +7,12 @@ specific contents pretaining to each of the respective packages.
 - [ugv_peripherals](https://github.com/LI-DC-Long-Island-Deer-Chaser/ugv_peripherals)
 - [ugv_description](https://github.com/LI-DC-Long-Island-Deer-Chaser/ugv_description)
 - [Slamtec Lidar](https://github.com/Slamtec/sllidar_ros2.git)
+- ardupilot
+- ardupilot_gazebo
+- ardupilot_gz
+- ardupilot_ros
+- ardupilot_sitl_models
+- laser_filters
+- micro_ros_agent
+- ros_gz
+- sdformat_urdf
